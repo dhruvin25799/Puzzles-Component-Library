@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans&display=swap');
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+
+
+:root{
+    --primary-red: #E63946;
+    --pastel-red: #EA5460;
+    --primary-blue: #1D3557;
+    --primary-white: #F1FAEE;
+    --secondary-blue: #457B9D;
+    --pale-blue: #A8DADC;
+}
+
+
+
+.body-container{
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 50px;
+    gap: 2rem;
+}
+
+.sidebar-container{
+    width: 200px;
+}
+
+
+.sidebar{
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+}
+
+.sidebar ul li{
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-red);
+}
+
+.sidebar ul li hr{
+    border: none;
+    border-top: dotted 3px var(--primary-red);
+}
+
+.sidebar ul li h3{
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: var(--pastel-red);
+}
+
+.sidebar a.active{
+    text-decoration: underline;
+}
+
+.sidebar a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--primary-red)
+}
+
+.example-container{
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.example-text-body span{
+    padding-right: 10px;
+    color: var(--primary-red);
+}
+
+.example-text-body .span-code{
+    padding: 0 10px;
+    border: 1px solid var(--primary-blue);
+    border-radius: 10px;
+    color: var(--primary-blue);
+    background-color: var(--primary-white);
+}
+
+.example-text-body .span-error{
+    color: var(--primary-red);
+}
+
+.example-text-body .span-success{
+    color: #28a745
+}
+
+.example-text-body .span-warning{
+    color: #FDE68A;
+}
+
+.example-text-body .span-info{
+    color: #17a2b8;
+}
+
+.example-showcase{
+    border: 3px solid var(--primary-red);
+    padding: 10px;
+    background-color: var(--primary-white);
+}
+
+.carbon-iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--primary-red);
+    padding: 10px;
+    background-color: var(--primary-white);
+}
+
+.flex-row-avatar{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.section-divider{
+    border: none;
+    border-top: 3px dotted var(--primary-red);
+    width: 100%;
+}

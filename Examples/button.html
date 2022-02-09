@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button | Sugar Component Library</title>
+    <script
+      src="https://kit.fontawesome.com/71f5b9ef6c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="example_main.css" />
+    <link rel="stylesheet" href="../components.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="../index.html" class="btn btn-link"
+          ><i class="fas fa-palette fa-3x"></i
+        ></a>
+        <h1>Pastel Sugar UI</h1>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html" class="btn btn-link"
+          ><i class="fas fa-home"></i>Home</a
+        >
+        <a href="#" class="btn btn-link"
+          ><i class="fas fa-book-open"></i>Documentation</a
+        >
+        <a href="./Examples/alert.html" class="btn btn-link active"
+          ><i class="fas fa-file-code"></i>Examples</a
+        >
+      </div>
+    </nav>
+    <div class="body-container">
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <ul>
+            <li><h3>Examples</h3></li>
+            <li><hr /></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./alert.html">Alert</a></li>
+            <li><a href="./avatar.html">Avatar</a></li>
+            <li><a href="./badge.html">Badge</a></li>
+            <li><a class="active" href="#">Button</a></li>
+            <li><a href="./card.html">Card</a></li>
+            <li><a href="./image.html">Image</a></li>
+            <li><a href="./input.html">Input</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-container">
+        <div class="example-text-body">
+          <h1>
+            <span><i class="fas fa-audio-description"></i></span>Button
+          </h1>
+          <p>Buttons are extremely necessary for actions and clicks.</p>
+          <p>
+            We provide you with 5 types of buttons : Primary, Primary-Outline,
+            Link, Icon Button and FAB.
+          </p>
+        </div>
+        <div class="example-showcase flex-row-avatar">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-primary-outline">Primary Outline</button>
+          <a class="btn btn-link" href="">Click Here</a>
+          <button class="btn btn-icon">
+            <i class="fas fa-comments"></i><p>Icon</p>
+          </button>
+          <button class="btn btn-fab">+</button>
+          <button class="btn btn-fab">^</button>
+        </div>
+        <div class="carbon-iframe">
+          <iframe
+            src="https://carbon.now.sh/embed/3Esrkk9TdvtKkyRAxXAP"
+            style="
+              width: 680px;
+              height: 234px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <hr class="section-divider">
+        <div class="example-text-body">
+          <h1>
+            <span><i class="fas fa-audio-description"></i></span>Usage
+          </h1>
+          <p>Use the class <span class="span-code">btn</span> to a button tag to use this style.</p>
+          <p>
+            Aditionally you can use pre-defined classes <span class="span-code">btn-primary</span> <span class="span-code">btn-primary-outline</span><br>
+            <span class="span-code">btn-link</span> <span class="span-code">btn-icon</span> and <span class="span-code">btn-fab</span> to use our pre-defined styles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

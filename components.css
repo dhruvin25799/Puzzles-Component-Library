@@ -1,0 +1,408 @@
+/* Typography */
+.type1{
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.type2{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.type3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.type4{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.type5{
+    font-size: 8px;
+    line-height: 16px;
+}
+
+.fw-light{
+    font-weight: 300;
+}
+
+.fw-regular{
+    font-weight: 400;
+}
+
+.fw-semibold{
+    font-weight: 600;
+}
+
+.fw-bold{
+    font-weight: 700;
+}
+
+.fw-black{
+    font-weight: 900;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Alert */
+.alert{
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.alert p{
+    margin: 0;
+}
+
+.alert.error{
+    background-color: #dc3545;
+    color: white;
+}
+
+.alert.success{
+    background-color: #28a745;
+    color: white;
+}
+
+.alert.warning{
+    background-color: #FDE68A;
+}
+
+.alert.info{
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Avatar */
+.avatar{
+    border-radius: 50%;
+    width: 3rem;
+    height: auto;
+}
+.avatar.medium{
+    width: 4rem;
+}
+.avatar.large{
+    width: 6rem;
+}
+.avatar.xlarge{
+    width: 8rem;
+}
+
+/* Badge */
+.badge-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.badge-container .badge{
+    border-radius: 4px;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    margin: 0.2rem;
+    color: white;
+}
+
+.badge.error{
+    background-color: #dc3545;
+}
+.badge.success{
+    background-color: #28a745;
+}
+
+.badge-container .badge-avatar{
+    position: absolute;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    bottom: 0;
+    right: 0;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-container .badge-avatar.large{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.badge-container .badge-avatar.xlarge{
+    width: 2rem;
+    height: 2rem;
+}
+
+.badge-container .badge-avatar.online {
+  background-color: #28a745;
+}
+
+.badge-container .badge-avatar.offline{
+    background-color: #dc3545;
+}
+
+.badge-container .badge-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid white;
+    top: -3px;
+    right: -3px;
+    color: white;
+    background-color: #dc3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button */
+.btn {
+  box-shadow: 0px 2px 3px #595254;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease 0s;
+}
+
+.btn.btn-primary {
+  color: white;
+  background: #dc0000;
+  cursor: pointer;
+}
+
+.btn.btn-primary:hover {
+  background: #ed2641;
+  text-decoration: none;
+}
+
+.btn.btn-primary-outline {
+  color: #dc0000;
+  background-color: white;
+  border: 1px solid #dc0000;
+  cursor: pointer;
+}
+
+.btn.btn-primary-outline:hover {
+  color: white;
+  background: #dc0000;
+}
+
+.btn.btn-link{
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+
+.btn.btn-link.active{
+  color: #ed2641;
+  text-decoration: underline;
+}
+
+.btn.btn-link:hover{
+  color: #ed2641;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn.btn-icon{
+  border: none;
+  background: white;
+  box-shadow: none;
+  cursor: pointer;
+  color: #dc0000;
+}
+
+.btn.btn-icon p{
+    display: inline;
+    margin: 0 5px;
+}
+
+.btn.btn-icon:hover{
+  background-color: #dc0000;
+  color: white;
+}
+
+.btn.btn-fab{
+  height: 3rem;
+  width: 3rem;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: none;
+  background: #dc0000;
+  color: white;
+  box-shadow: 0px 2px 3px #595254;
+  font-size: 1.5rem;
+}
+
+.btn.btn-fab:hover{
+  background-color: #ed2641;
+  cursor: pointer;
+}
+
+/* Card */
+.card{
+    display: flex;
+    flex-flow: column;
+    border-radius: 0.5rem;
+    background-color: white;
+    background-color: #F1FAEE;
+    box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    overflow: hidden;
+}
+
+.card.horizontal{
+    flex-flow: row wrap;
+}
+
+
+.card-heading.header-top{
+    order: -1;
+}
+
+.card .card-badge-container{
+    position: relative;
+}
+
+.card .card-badge-container .card-badge{
+    position: absolute;
+    background-color: green;
+    padding: 0 1%;
+    top: 8px;
+    left: 8px;
+    border-radius: 10%;
+    z-index: 1;
+}
+
+.card .card-badge-container .card-badge-dismiss{
+    position: absolute;
+    color: white;
+    right: 3px;
+    top: 3px;
+    z-index: 1;
+}
+
+.card .card-image{
+    position: relative;
+}
+
+.card .card-image img{
+    width: 100%;
+    height: auto;
+}
+
+.card .card-heading{
+    padding: 0 1rem;
+}
+
+.card .card-heading p{
+    color: gray;
+}
+
+.card .card-body{
+    padding: 0 1rem;
+}
+
+.card .card-actions{
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.card .card-actions .card-action-buttons{
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+}
+
+.card .card-actions .card-actions-icons{
+    margin-left: auto;
+    
+}
+.card .card-actions .card-actions-icons i{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.card .card-image .bottom-left{
+    color: white;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+/* Image */
+.image-container{
+    width: 20rem;
+}
+
+.image-container .image{
+    width: 100%;
+    height: auto;
+}
+
+.image-container .image.round{
+    border-radius: 50%;
+}
+
+/* Input */
+.input-control {
+position: relative;
+}
+
+.input-control input {
+  padding:1em;
+  border: 1px solid #ccc;
+  border-radius:5px;
+}
+
+.input-control label {
+position: absolute;
+top: 0;
+right: 1px;
+bottom: 1px;
+left: .5em;
+z-index: 1;
+height: 1em;
+font-size: 13px;
+line-height: 3.5em;
+color: #999;
+white-space: nowrap;
+cursor: text;
+transition:all .1s ease;
+
+}
+
+.input-control input:focus ~ label, input:valid ~label {
+  font-size:9px;
+  font-weight:bold;
+  left:5px;
+  top:-5px;
+}
+.input-control input:valid ~label {
+  color:green;
+}
+.input-control input:focus:invalid ~label{
+  color:red;
+}
+
+.input-control input:required ~label::before {
+  content:"*";
+  color:red;
+}
+
+.input-control input:required:valid ~label::before {
+  color:green;
+}
