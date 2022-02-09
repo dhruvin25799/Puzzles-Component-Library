@@ -67,10 +67,23 @@
   border-radius: 0.3rem;
   padding: 0.5rem;
   margin: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .alert p {
   margin: 0;
+  display: inline-block;
+}
+
+.alert .alert-dismiss{
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.alert .alert-dismiss:hover{
+    color: black;
 }
 
 .alert.error {
