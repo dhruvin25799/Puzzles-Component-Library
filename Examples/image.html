@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image | Sugar Component Library</title>
+    <script
+      src="https://kit.fontawesome.com/71f5b9ef6c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="example_main.css" />
+    <link rel="stylesheet" href="../components.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="../index.html" class="btn btn-link"
+          ><i class="fas fa-palette fa-3x"></i
+        ></a>
+        <h1>Pastel Sugar UI</h1>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html" class="btn btn-link"
+          ><i class="fas fa-home"></i>Home</a
+        >
+        <a href="#" class="btn btn-link"
+          ><i class="fas fa-book-open"></i>Documentation</a
+        >
+        <a href="./Examples/alert.html" class="btn btn-link active"
+          ><i class="fas fa-file-code"></i>Examples</a
+        >
+      </div>
+    </nav>
+    <div class="body-container">
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <ul>
+            <li><h3>Examples</h3></li>
+            <li><hr /></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./alert.html">Alert</a></li>
+            <li><a href="./avatar.html">Avatar</a></li>
+            <li><a href="./badge.html">Badge</a></li>
+            <li><a href="./button.html">Button</a></li>
+            <li><a href="./card.html">Card</a></li>
+            <li><a class="active" href="#">Image</a></li>
+            <li><a href="./input.html">Input</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="example-container">
+        <div class="example-text-body">
+          <h1>
+            <span><i class="fas fa-image"></i></span>Image
+          </h1>
+          <p>
+            This component is designed to contain images and make them
+            responsive.
+          </p>
+        </div>
+        <div class="example-showcase flex-row-avatar">
+          <div class="image-container">
+            <img class="image" src="./res/resp_image.png" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="carbon-iframe">
+          <iframe
+            src="https://carbon.now.sh/embed/Qnmb5XzExAeKKxJT10HJ"
+            style="
+              width: 680px;
+              height: 134px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <hr class="section-divider" />
+        <div class="example-text-body">
+          <h1>
+            <span><i class="fas fa-image"></i></span>Round Image
+          </h1>
+          <p>
+            This component is designed to contain images and make them round.
+          </p>
+          <p>Note: The image has to be square for this to work correctly.</p>
+        </div>
+        <div class="example-showcase flex-row-avatar">
+          <div class="image-container">
+            <img class="image round" src="./res/square_img.jpg" />
+          </div>
+        </div>
+        <div class="carbon-iframe">
+          <iframe
+            src="https://carbon.now.sh/embed/F83vOTILJzHHukenw42i"
+            style="
+              width: 680px;
+              height: 134px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+        </div>
+        <hr class="section-divider" />
+        <div class="example-text-body">
+          <h1>
+            <span><i class="fas fa-image"></i></span>Usage
+          </h1>
+          <p>
+            Use the class <span class="span-code">image-container</span> on a div to use this.<br>Use the class <span class="span-code">image</span> for the image tag inside the container.
+          </p>
+          <p>Additionally you can use the class <span class="span-code">round</span> to make the image round.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

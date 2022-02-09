@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap');
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+
+
+:root{
+    --primary-red: #E63946;
+    --pastel-red: #EA5460;
+    --primary-blue: #1D3557;
+    --primary-white: #F1FAEE;
+    --secondary-blue: #457B9D;
+    --pale-blue: #A8DADC;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: white;
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: white;
+    z-index: 2;
+}
+
+nav .nav-brand{
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    flex-flow: row;
+    color: var(--primary-red);
+}
+
+.nav-brand a{
+    color: var(--pastel-red);
+}
+
+nav .nav-links{
+    margin-left: auto;
+    align-self: center;
+}
+
+.nav-links a{
+    color: black;
+    color: var(--pastel-red);
+}
+
+.main-header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.main-header h1{
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-red);
+}
+
+.main-header .action-buttons{
+    display: flex;
+    flex-flow: row;
+    gap: 2rem;
+}
+
+footer{
+    margin-top: auto;
+    flex: 0 0 100px;
+    background-color: var(--pale-blue);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer a{
+    color: black;
+}
+
+footer i:hover{
+    color: var(--primary-white);
+}
+
+footer .footer-icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
