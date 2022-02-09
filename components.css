@@ -424,9 +424,29 @@ input:valid ~ label {
 /* Chip */
 .chip {
   display: inline-block;
-  padding: 0 1rem;
-  border-radius: 1.5rem;
-  background-color: antiquewhite;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 1px solid var(--btn-primary-red);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.chip p{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.chip .chip-dismiss{
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.chip .chip-dismiss:hover{
+  color: var(--btn-primary-red);
 }
 
 /* Lists */
