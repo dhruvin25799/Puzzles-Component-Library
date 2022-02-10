@@ -195,7 +195,7 @@
   text-decoration: none;
   border: none;
   border-radius: 0.5rem;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
   cursor: pointer;
 }
 
@@ -486,7 +486,7 @@ ul.list-stacked li {
 
 .nav a {
   color: var(--black);
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .nav a:hover {
@@ -504,7 +504,7 @@ ul.list-stacked li {
 }
 
 .nav .nav-links li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
   text-decoration: none;
   color: black;
 }
