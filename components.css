@@ -4,6 +4,9 @@
   --warning: #fde68a;
   --info: #17a2b8;
   --white: white;
+  --black: black;
+  --gray: gray;
+  --red: red;
   --btn-primary-red: #dc0000;
   --btn-primary-red-hover: #ed2641;
 }
@@ -55,7 +58,7 @@
 }
 
 .text-gray {
-  color: gray;
+  color: var(--gray);
 }
 
 .text-center {
@@ -77,13 +80,13 @@
 }
 
 .alert .alert-dismiss {
-  color: white;
+  color: var(--white);
   margin-left: auto;
   cursor: pointer;
 }
 
 .alert .alert-dismiss:hover {
-  color: black;
+  color: var(--black);
 }
 
 .alert.error {
@@ -132,7 +135,7 @@
   padding: 0.2rem;
   font-size: 0.7rem;
   margin: 0.2rem;
-  color: white;
+  color: var(--white);
 }
 
 .badge.error {
@@ -208,12 +211,12 @@
 
 .btn.btn-primary-outline {
   color: var(--btn-primary-red);
-  background-color: white;
+  background-color: var(--white);
   border: 1px solid var(--btn-primary-red);
 }
 
 .btn.btn-primary-outline:hover {
-  color: white;
+  color: var(--white);
   background: var(--btn-primary-red);
 }
 
@@ -235,7 +238,7 @@
 
 .btn.btn-icon {
   border: none;
-  background: white;
+  background: var(--white);
   box-shadow: none;
   color: var(--btn-primary-red);
 }
@@ -247,7 +250,7 @@
 
 .btn.btn-icon:hover {
   background-color: var(--btn-primary-red);
-  color: white;
+  color: var(--white);
 }
 
 .btn.btn-fab {
@@ -257,7 +260,7 @@
   border-radius: 50%;
   box-shadow: none;
   background: var(--btn-primary-red);
-  color: white;
+  color: var(--white);
   box-shadow: 0px 2px 3px #595254;
   font-size: 1.5rem;
 }
@@ -271,7 +274,7 @@
   display: flex;
   flex-flow: column;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: var(--white);
   background-color: #f1faee;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
     0 1px 3px 0 rgb(0 0 0 / 12%);
@@ -292,7 +295,7 @@
 
 .card .card-badge-container .card-badge {
   position: absolute;
-  background-color: green;
+  background-color: var(--success);
   padding: 0 1%;
   top: 8px;
   left: 8px;
@@ -302,7 +305,7 @@
 
 .card .card-badge-container .card-badge-dismiss {
   position: absolute;
-  color: white;
+  color: var(--white);
   right: 3px;
   top: 3px;
   z-index: 1;
@@ -322,7 +325,7 @@
 }
 
 .card .card-heading p {
-  color: gray;
+  color: var(--gray);
 }
 
 .card .card-body {
@@ -351,7 +354,7 @@
 }
 
 .card .card-image .bottom-left {
-  color: white;
+  color: var(--white);
   position: absolute;
   bottom: 0.5rem;
   left: 1rem;
@@ -426,7 +429,7 @@ input:valid ~ label {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--white);
   border: 1px solid var(--btn-primary-red);
   display: flex;
   flex-flow: row nowrap;
@@ -468,7 +471,7 @@ ul.list-stacked {
 
 ul.list-stacked li {
   padding: 1% 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
 }
 
 /* Navigation Bar */
@@ -478,16 +481,16 @@ ul.list-stacked li {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .nav a {
-  color: black;
+  color: var(--black);
   transition: all 0.3s ease 0s;
 }
 
 .nav a:hover {
-  color: red;
+  color: var(--red);
 }
 
 .nav .nav-links {
@@ -507,7 +510,7 @@ ul.list-stacked li {
 }
 
 .nav .nav-links li a:hover {
-  color: red;
+  color: var(--red);
 }
 
 /* Modal */
@@ -542,7 +545,7 @@ ul.list-stacked li {
 .modal .modal-body .modal-dismiss:hover {
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 /* Rating */
@@ -555,28 +558,28 @@ ul.list-stacked li {
 
 .rating-control a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   transition: all 0.5s ease 0s;
 }
 
 .rating-control a:hover {
-  color: red;
+  color: var(--red);
 }
 
 .s1:hover ~ a {
-  color: red;
+  color: var(--red);
 }
 .s2:hover ~ a {
-  color: red;
+  color: var(--red);
 }
 .s3:hover ~ a {
-  color: red;
+  color: var(--red);
 }
 .s4:hover ~ a {
-  color: red;
+  color: var(--red);
 }
 .s5:hover ~ a {
-  color: red;
+  color: var(--red);
 }
 
 /* Snackbar */
@@ -585,7 +588,7 @@ ul.list-stacked li {
   min-width: 250px;
   margin-left: -125px;
   background-color: black;
-  color: white;
+  color: var(--white);
   text-align: center;
   border-radius: 2px;
   padding: 1rem;
