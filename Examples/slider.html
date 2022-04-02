@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button | Sugar Component Library</title>
+    <title>Slider | Sugar Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="example_main.css" />
-    <link rel="stylesheet" href="../components.css">
+    <link rel="stylesheet" href="../components.css" />
   </head>
   <body>
     <nav>
@@ -43,7 +43,7 @@
             <li><a href="./alert.html">Alert</a></li>
             <li><a href="./avatar.html">Avatar</a></li>
             <li><a href="./badge.html">Badge</a></li>
-            <li><a class="active" href="#">Button</a></li>
+            <li><a href="./button.html">Button</a></li>
             <li><a href="./card.html">Card</a></li>
             <li><a href="./chip.html">Chip</a></li>
             <li><a href="./image.html">Image</a></li>
@@ -51,41 +51,42 @@
             <li><a href="./list.html">List</a></li>
             <li><a href="./navigation.html">Navigation</a></li>
             <li><a href="./modal.html">Modal</a></li>
-            <li><a href="./rating.html">Rating</a></li>
+            <li><a href="#">Rating</a></li>
             <li><a href="./snackbar.html">Snackbar</a></li>
             <li><a href="./grid.html">Grid</a></li>
             <li><a href="./navbar.html">NavBar</a></li>
-            <li><a href="./slider.html">Slider</a></li>
+            <li><a class="active" href="#">Slider</a></li>
           </ul>
         </div>
       </div>
       <div class="example-container">
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-audio-description"></i></span>Button
+            <span><i class="fa-solid fa-sliders"></i></span>Slider
           </h1>
-          <p>Buttons are extremely necessary for actions and clicks.</p>
           <p>
-            We provide you with 5 types of buttons : Primary, Primary-Outline,
-            Link, Icon Button and FAB.
+            Sliders are an important part of everything numbers related. A range
+            slider helps to display and select ranges.
           </p>
         </div>
-        <div class="example-showcase flex-row-avatar">
-          <button class="btn btn-primary">Primary</button>
-          <button class="btn btn-primary-outline">Primary Outline</button>
-          <a class="btn btn-link" href="">Click Here</a>
-          <button class="btn btn-icon">
-            <i class="fas fa-comments"></i><p>Icon</p>
-          </button>
-          <button class="btn btn-fab">+</button>
-          <button class="btn btn-fab">^</button>
+        <div class="example-showcase">
+          <div class="slider-container">
+            <input
+              class="slider"
+              type="range"
+              min="0"
+              max="100"
+              oninput="rangeValue.innerText = this.value"
+            />
+            <p id="rangeValue">50</p>
+          </div>
         </div>
         <div class="carbon-iframe">
           <iframe
-            src="https://carbon.now.sh/embed/3Esrkk9TdvtKkyRAxXAP"
+            src="https://carbon.now.sh/embed/WhhVfZumdd2CF8Y6PwsM"
             style="
               width: 680px;
-              height: 234px;
+              height: 254px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -94,15 +95,22 @@
           >
           </iframe>
         </div>
-        <hr class="section-divider">
+        <hr class="section-divider" />
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-audio-description"></i></span>Usage
+            <span><i class="fa-solid fa-sliders"></i></span>Usage
           </h1>
-          <p>Use the class <span class="span-code">btn</span> to a button tag to use this style.</p>
           <p>
-            Aditionally you can use pre-defined classes <span class="span-code">btn-primary</span> <span class="span-code">btn-primary-outline</span><br>
-            <span class="span-code">btn-link</span> <span class="span-code">btn-icon</span> and <span class="span-code">btn-fab</span> to use our pre-defined styles.
+            Use the class <span class="span-code">slider-container</span> on a
+            div to use this component.
+          </p>
+          <p>
+            Inside this div you can use input element with class
+            <span class="span-code">slider</span> to use this slider.
+          </p>
+          <p>
+            To get range value displayed, use a p with ID :
+            <span class="span-code">rangeValue</span>
           </p>
         </div>
       </div>
