@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackbar | Sugar Component Library</title>
+    <title>Grid | Sugar Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
@@ -52,8 +52,8 @@
             <li><a href="./navigation.html">Navigation</a></li>
             <li><a href="./modal.html">Modal</a></li>
             <li><a href="./rating.html">Rating</a></li>
-            <li><a class="active" href="#">Snackbar</a></li>
-            <li><a href="./grid.html">Grid</a></li>
+            <li><a href="./snackbar.html">Snackbar</a></li>
+            <li><a class="active" href="#">Grid</a></li>
             <li><a href="./navbar.html">NavBar</a></li>
           </ul>
         </div>
@@ -61,29 +61,29 @@
       <div class="example-container">
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-cookie-bite"></i></span>Snackbar
+            <span><i class="fa-solid fa-grip"></i></span>Grid
           </h1>
           <p>
-            Snackbars are used to display updates and make them go away on their
-            own.
+            Grids are useful for many scenarios, where you want to have data
+            displayed in tabular format. We also have a 2-item grid and a 3-item
+            grid for most of your cases.
           </p>
         </div>
         <div class="example-showcase">
-          <div>
-            <button class="btn btn-primary-outline" id="showSnackbar">
-              Show Snackbar
-            </button>
-          </div>
-          <div class="snackbar" id="mySnackbar">
-            <p>Something happened. Well I'm a snackbar!</p>
+          <div class="grid-container three-item">
+            <div>I am some text</div>
+            <div class="red-box">I am red box</div>
+            <div class="image-container">
+              <img class="image" src="./res/resp_image.png" />
+            </div>
           </div>
         </div>
         <div class="carbon-iframe">
           <iframe
-            src="https://carbon.now.sh/embed/PZnTOjnFE2Hl3YJaJLTP"
+            src="https://carbon.now.sh/embed/MfFhHEAK7kqFkDb59pyV"
             style="
               width: 680px;
-              height: 134px;
+              height: 214px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -95,29 +95,21 @@
         <hr class="section-divider" />
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-cookie-bite"></i></span>Usage
+            <span><i class="fa-solid fa-grip"></i></span>Usage
           </h1>
           <p>
-            Use the class <span class="span-code">snackbar</span> on a div to
-            use this component.
+            Use the class <span class="span-code">grid-container</span> on a div
+            to use this component.
           </p>
           <p>
-            Note: The ID: mySnackbar can be changed according to your
-            JavaScript.
+            Additionally use can use our extra classes
+            <span class="span-code">two-item</span>
+            <span class="span-code">three-item</span>
+            to get a two-item and three-item grid.
           </p>
+          <p>Note : The grid has a 1rem gap.</p>
         </div>
       </div>
     </div>
-    <script>
-      const btn = document.getElementById("showSnackbar");
-      const snackbar = document.getElementById("mySnackbar");
-
-      btn.addEventListener("click", () => {
-        snackbar.classList.add("show");
-        setTimeout(() => {
-          snackbar.classList.remove("show");
-        }, 3000);
-      });
-    </script>
   </body>
 </html>

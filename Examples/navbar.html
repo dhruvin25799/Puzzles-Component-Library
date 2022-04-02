@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackbar | Sugar Component Library</title>
+    <title>NavBar Submenu | Sugar Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
@@ -52,38 +52,51 @@
             <li><a href="./navigation.html">Navigation</a></li>
             <li><a href="./modal.html">Modal</a></li>
             <li><a href="./rating.html">Rating</a></li>
-            <li><a class="active" href="#">Snackbar</a></li>
+            <li><a href="./snackbar.html">Snackbar</a></li>
             <li><a href="./grid.html">Grid</a></li>
-            <li><a href="./navbar.html">NavBar</a></li>
+            <li><a class="active" href="#">NavBar</a></li>
           </ul>
         </div>
       </div>
       <div class="example-container">
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-cookie-bite"></i></span>Snackbar
+            <span><i class="fas fa-bars"></i></span>NavBar (Submenu)
           </h1>
           <p>
-            Snackbars are used to display updates and make them go away on their
-            own.
+            Navigation bar is key to a good UX of any website. Here we have made
+            it responsive with submenus and made it mobile friendly.
           </p>
         </div>
         <div class="example-showcase">
-          <div>
-            <button class="btn btn-primary-outline" id="showSnackbar">
-              Show Snackbar
-            </button>
-          </div>
-          <div class="snackbar" id="mySnackbar">
-            <p>Something happened. Well I'm a snackbar!</p>
-          </div>
+          <nav class="navbar">
+            <ul class="menu" id="navbar-menu">
+              <li class="navbar-brand">
+                <a href="#"><i class="fas fa-compass fa-3x"></i></a>
+                <i
+                  id="navbar-toggle"
+                  class="fa-solid fa-burger hamburger fa-2x"
+                ></i>
+              </li>
+              <li><a href="#">Link</a></li>
+              <li class="link-dropdown">
+                Submenu<i class="fa fa-caret-down"></i>
+                <ul>
+                  <li><a href="">Drop1</a></li>
+                  <li><a href="">Drop2</a></li>
+                  <li><a href="">Drop3</a></li>
+                </ul>
+              </li>
+              <li><button class="btn btn-primary">Login</button></li>
+            </ul>
+          </nav>
         </div>
         <div class="carbon-iframe">
           <iframe
-            src="https://carbon.now.sh/embed/PZnTOjnFE2Hl3YJaJLTP"
+            src="https://carbon.now.sh/embed/H74TPz3UjNnazTFeJUfY"
             style="
               width: 680px;
-              height: 134px;
+              height: 414px;
               border: 0;
               transform: scale(1);
               overflow: hidden;
@@ -95,28 +108,41 @@
         <hr class="section-divider" />
         <div class="example-text-body">
           <h1>
-            <span><i class="fas fa-cookie-bite"></i></span>Usage
+            <span><i class="fas fa-bars"></i></span>Usage
           </h1>
           <p>
-            Use the class <span class="span-code">snackbar</span> on a div to
-            use this component.
+            Use the class <span class="span-code">navbar</span> on a nav element
+            to use this component.
           </p>
           <p>
-            Note: The ID: mySnackbar can be changed according to your
-            JavaScript.
+            Use the class <span class="span-code">menu</span> on a ul/ol to add
+            links to the nav.
+          </p>
+          <p>
+            Use the class <span class="span-code">link-dropdown</span> on an li
+            to make it a hover dropdown style submenu. Inside that li now you
+            can use ul/ol again.
+          </p>
+          <p>
+            On the first li you can use class
+            <span class="span-code">navbar-brand</span> so that during mobile
+            view brand is displayed. Also add an hamburger icon with it to make
+            it truly responsive.
+          </p>
+          <p>
+            Note: The menu is toggled with a display class when hamburger icon
+            is clicked, this can be changed with your javascript.
           </p>
         </div>
       </div>
     </div>
     <script>
-      const btn = document.getElementById("showSnackbar");
-      const snackbar = document.getElementById("mySnackbar");
+      const btn = document.getElementById("navbar-toggle");
+      const menu = document.getElementById("navbar-menu");
+      const dismissBtn = document.getElementById("myModalDismiss");
 
       btn.addEventListener("click", () => {
-        snackbar.classList.add("show");
-        setTimeout(() => {
-          snackbar.classList.remove("show");
-        }, 3000);
+        menu.classList.toggle("display");
       });
     </script>
   </body>

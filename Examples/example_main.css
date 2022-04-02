@@ -142,3 +142,8 @@ font-family: 'Josefin Sans', sans-serif;
     border-top: 3px dotted var(--primary-red);
     width: 100%;
 }
+
+.red-box{
+    color: white;
+    background-color: red;
+}
