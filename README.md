@@ -41,6 +41,9 @@ Pastel Sugar-UI can be integrated as easily as integrating other CSS libraries.
 * Modal
 * Ratings
 * Snackbar
+* Grid -> 2-Item and 3-Item
+* Navigation with submenus and hamburger
+* Range Slider
 * More to come .....
 
 
