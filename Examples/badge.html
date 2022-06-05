@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badge | Sugar Component Library</title>
+    <title>Badge | Puzzles Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
@@ -14,193 +14,234 @@
     <link rel="stylesheet" href="../components.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-brand">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-palette fa-3x"></i
-        ></a>
-        <h1>Pastel Sugar UI</h1>
-      </div>
-      <div class="nav-links">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-home"></i>Home</a
-        >
-        <a
-          target="_blank"
-          href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
-          class="btn btn-link"
-          ><i class="fas fa-book-open"></i>Documentation</a
-        >
-        <a href="./Examples/alert.html" class="btn btn-link active"
-          ><i class="fas fa-file-code"></i>Examples</a
-        >
-      </div>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">
+        <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+        <h1>Puzzles</h1>
+      </a>
+      <menu class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a
+            href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+            target="_blank"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a href="./Examples/typography.html" class="active">Examples</a>
+        </li>
+      </menu>
     </nav>
-    <div class="body-container">
-      <div class="sidebar-container">
-        <div class="sidebar">
-          <ul>
-            <li><h3>Examples</h3></li>
-            <li><hr /></li>
-            <li><a href="./typography.html">Typography</a></li>
-            <li><a href="./alert.html">Alert</a></li>
-            <li><a href="./avatar.html">Avatar</a></li>
-            <li><a class="active" href="#">Badge</a></li>
-            <li><a href="./button.html">Button</a></li>
-            <li><a href="./card.html">Card</a></li>
-            <li><a href="./chip.html">Chip</a></li>
-            <li><a href="./image.html">Image</a></li>
-            <li><a href="./input.html">Input</a></li>
-            <li><a href="./list.html">List</a></li>
-            <li><a href="./navigation.html">Navigation</a></li>
-            <li><a href="./modal.html">Modal</a></li>
-            <li><a href="./rating.html">Rating</a></li>
-            <li><a href="./snackbar.html">Snackbar</a></li>
-            <li><a href="./grid.html">Grid</a></li>
-            <li><a href="./navbar.html">NavBar</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="example-container">
-        <div class="example-text-body">
-          <h1>
-            <span><i class="far fa-dot-circle"></i></span>Badge
-          </h1>
-          <p>
-            Badges are used to highlight status or something about the object
-            for recognition.
-          </p>
-          <p>We provide you with 2 standard badges : Error and Success</p>
-        </div>
-        <div class="example-showcase flex-row-avatar">
-          <div class="badge-container">
-            <div class="badge error">Error</div>
-          </div>
-          <div class="badge-container">
-            <div class="badge success">Success</div>
+    <div class="body-container flex column">
+      <div class="body-content flex row">
+        <div class="sidebar-container">
+          <div class="sidebar">
+            <ul class="flex column">
+              <li><h3>Examples</h3></li>
+              <li><hr /></li>
+              <li><a href="./typography.html">Typography</a></li>
+              <li><a href="./alert.html">Alert</a></li>
+              <li><a href="./avatar.html">Avatar</a></li>
+              <li><a class="active" href="#">Badge</a></li>
+              <li><a href="./button.html">Button</a></li>
+              <li><a href="./card.html">Card</a></li>
+              <li><a href="./chip.html">Chip</a></li>
+              <li><a href="./image.html">Image</a></li>
+              <li><a href="./input.html">Input</a></li>
+              <li><a href="./list.html">List</a></li>
+              <li><a href="./navigation.html">Navigation</a></li>
+              <li><a href="./modal.html">Modal</a></li>
+              <li><a href="./rating.html">Rating</a></li>
+              <li><a href="./snackbar.html">Snackbar</a></li>
+              <li><a href="./grid.html">Grid</a></li>
+              <li><a href="./navbar.html">NavBar</a></li>
+              <li><a href="./slider.html">Slider</a></li>
+            </ul>
           </div>
         </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/4vNB0ifmU3J11L08td7w"
-            style="
-              width: 680px;
-              height: 194px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="far fa-dot-circle"></i></span>Badge on Avatar
-          </h1>
-          <p>
-            These badges can be used on our avatars to provide online and
-            offline status.
-          </p>
-        </div>
-        <div class="example-showcase flex-row-avatar">
-          <div class="badge-container">
-            <img class="avatar" src="./res/avatar.png" />
-            <div class="badge-avatar online"></div>
+        <div class="example-container flex column">
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="far fa-dot-circle"></i></span>Badge
+            </h1>
+            <div>
+              <p>
+                Badges are used to highlight status or something about the
+                object for recognition.
+              </p>
+              <p>We provide you with 2 standard badges : Error and Success</p>
+            </div>
           </div>
-          <div class="badge-container">
-            <img class="avatar medium" src="./res/avatar.png" />
-            <div class="badge-avatar offline"></div>
+          <div class="example-showcase flex-row-avatar">
+            <div class="badge-container">
+              <div class="badge error">Error</div>
+            </div>
+            <div class="badge-container">
+              <div class="badge success">Success</div>
+            </div>
           </div>
-          <div class="badge-container">
-            <img class="avatar large" src="./res/avatar.png" />
-            <div class="badge-avatar large online"></div>
+          <div class="carbon-iframe flex centered">
+            <iframe
+              src="https://carbon.now.sh/embed/4vNB0ifmU3J11L08td7w"
+              style="
+                width: 680px;
+                height: 194px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
-          <div class="badge-container">
-            <img class="avatar xlarge" src="./res/avatar.png" />
-            <div class="badge-avatar xlarge offline"></div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="far fa-dot-circle"></i></span>Badge on Avatar
+            </h1>
+            <div>
+              <p>
+                These badges can be used on our avatars to provide online and
+                offline status.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/4jdpVXKmc8AsfQXYYx5i"
-            style="
-              width: 680px;
-              height: 394px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="far fa-dot-circle"></i></span>Badge on Icon
-          </h1>
-          <p>
-            This badge can be used on icons to show any small update or number
-            on top-right of icons.
-          </p>
-        </div>
-        <div class="example-showcase flex-row-avatar">
-          <div class="badge-container">
-            <i class="far fa-bell fa-3x"></i>
-            <div class="badge-icon offline">2</div>
+          <div class="example-showcase flex-row-avatar">
+            <div class="badge-container">
+              <img class="avatar" src="./res/avatar.png" />
+              <div class="badge-avatar online"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar medium" src="./res/avatar.png" />
+              <div class="badge-avatar offline"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar large" src="./res/avatar.png" />
+              <div class="badge-avatar large online"></div>
+            </div>
+            <div class="badge-container">
+              <img class="avatar xlarge" src="./res/avatar.png" />
+              <div class="badge-avatar xlarge offline"></div>
+            </div>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/xz56R21XsB9sPCag4UOY"
-            style="
-              width: 680px;
-              height: 154px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="far fa-dot-circle"></i></span>Usage
-          </h1>
-          <p>
-            A div with class <span class="span-code">badge-container</span> must
-            be the parent for all badges.<br />
-            Inside the div, you can use another div class
-            <span class="span-code">badge error</span> or
-            <span class="span-code">badge success</span> for colored badges.
-          </p>
-          <p>
-            For avatar badges, inside the container div, use a div below the
-            avatar with class
-            <span class="span-code">badge-avatar</span>.<br />Aditionally you
-            can also use classes <span class="span-code">online</span>
-            <span class="span-code">offline</span> for the color of avatar
-            badge.
-          </p>
-          <p>
-            Note: Use the class <span class="span-code">large</span>and class
-            <span class="span-code">xlarge</span> for avatars that are large and
-            xlarge.
-          </p>
-          <p>
-            For icon badges inside the container div, use a div below the icon
-            img with class
-            <span class="span-code">badge-cion</span>.<br />Aditionally you can
-            use classes <span class="span-code">offline</span>
-            <span class="span-code">online</span> to get colored badges.
-          </p>
+          <div class="carbon-iframe flex centered">
+            <iframe
+              src="https://carbon.now.sh/embed/4jdpVXKmc8AsfQXYYx5i"
+              style="
+                width: 680px;
+                height: 394px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="far fa-dot-circle"></i></span>Badge on Icon
+            </h1>
+            <div>
+              <p>
+                This badge can be used on icons to show any small update or
+                number on top-right of icons.
+              </p>
+            </div>
+          </div>
+          <div class="example-showcase flex-row-avatar">
+            <div class="badge-container">
+              <i class="far fa-bell fa-3x"></i>
+              <div class="badge-icon offline">2</div>
+            </div>
+          </div>
+          <div class="carbon-iframe flex centered">
+            <iframe
+              src="https://carbon.now.sh/embed/xz56R21XsB9sPCag4UOY"
+              style="
+                width: 680px;
+                height: 154px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="far fa-dot-circle"></i></span>Usage
+            </h1>
+            <p>
+              A div with class
+              <span class="span-code">badge-container</span> must be the parent
+              for all badges.<br />
+              Inside the div, you can use another div class
+              <span class="span-code">badge error</span> or
+              <span class="span-code">badge success</span> for colored badges.
+            </p>
+            <p>
+              For avatar badges, inside the container div, use a div below the
+              avatar with class
+              <span class="span-code">badge-avatar</span>.<br />Aditionally you
+              can also use classes <span class="span-code">online</span>
+              <span class="span-code">offline</span> for the color of avatar
+              badge.
+            </p>
+            <p>
+              Note: Use the class <span class="span-code">large</span>and class
+              <span class="span-code">xlarge</span> for avatars that are large
+              and xlarge.
+            </p>
+            <p>
+              For icon badges inside the container div, use a div below the icon
+              img with class
+              <span class="span-code">badge-cion</span>.<br />Aditionally you
+              can use classes <span class="span-code">offline</span>
+              <span class="span-code">online</span> to get colored badges.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <footer class="flex row">
+      <div class="flex column gap">
+        <h3><i class="fa-solid fa-puzzle-piece"></i>Puzzles UI</h3>
+        <p>
+          Puzzles is a component library to help you solve all your UI style
+          troubles.
+        </p>
+      </div>
+      <div class="flex column gap">
+        <h3>Socials</h3>
+        <ul class="flex column gap">
+          <li>
+            <a
+              href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dhruvin-mehta-21a8a7190/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex column gap">
+        <h3>Our Team</h3>
+        <p>
+          Made with <span><i class="fa-solid fa-heart"></i></span> by Dhruvin
+          Mehta
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

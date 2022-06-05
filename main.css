@@ -1,105 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap");
 /*
 font-family: 'Architects Daughter', cursive;
 font-family: 'Josefin Sans', sans-serif;
 */
 
-
-
-:root{
-    --primary-red: #E63946;
-    --pastel-red: #EA5460;
-    --primary-blue: #1D3557;
-    --primary-white: #F1FAEE;
-    --secondary-blue: #457B9D;
-    --pale-blue: #A8DADC;
+:root {
+  --COLOR-bg: #fafafa;
+  --COLOR-secondary-bg: white;
+  --COLOR-text: black;
+  --COLOR-border: rgba(128, 128, 128, 0.3);
+  --COLOR-btn-primary: #028aff;
+  --COLOR-btn-primary-hover: #ff7702;
+  --COLOR-backdrop-bg: rgba(0, 0, 0, 0.85);
+  --COLOR-modal-bg: white;
+  --COLOR-blue: #028aff;
 }
 
-body{
-    display: flex;
-    flex-flow: column;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 8px;
-    background-color: white;
-    min-height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-
+.nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: var(--COLOR-secondary-bg);
 }
 
-nav{
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: white;
-    z-index: 2;
+*,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-nav .nav-brand{
-    font-family: 'Architects Daughter', cursive;
-    display: flex;
-    flex-flow: row;
-    color: var(--primary-red);
+body {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--COLOR-bg);
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.nav-brand a{
-    color: var(--pastel-red);
+.main-content {
+  width: 50%;
 }
 
-nav .nav-links{
-    margin-left: auto;
-    align-self: center;
+.main-content h1 {
+  font-family: "Architects Daughter", cursive;
+  color: var(--COLOR-btn-primary);
 }
 
-.nav-links a{
-    color: black;
-    color: var(--pastel-red);
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  justify-content: space-between;
 }
 
-.main-header{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10%;
+footer div {
+  flex: 1 0 33%;
 }
 
-.main-header h1{
-    text-align: center;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 2.5rem;
-    color: var(--primary-red);
+footer div h3{
+  color: var(--COLOR-btn-primary);
 }
 
-.main-header .action-buttons{
-    display: flex;
-    flex-flow: row;
-    gap: 2rem;
+footer div span{
+  color: red;
 }
 
-footer{
-    margin-top: auto;
-    flex: 0 0 100px;
-    background-color: var(--pale-blue);
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+footer div ul{
+  list-style: none;
 }
 
-footer a{
-    color: black;
-}
-
-footer i:hover{
-    color: var(--primary-white);
-}
-
-footer .footer-icons{
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+footer div ul li a{
+  text-decoration: none;
+  color: unset;
 }
