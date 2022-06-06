@@ -344,6 +344,12 @@
   gap: 1rem;
 }
 
+@media (max-width: 480px) {
+  .card.horizontal{
+    flex-flow: column;
+  }
+}
+
 
 /* Image */
 .image-container {
@@ -615,6 +621,12 @@ ul.list-stacked li {
 
 .grid-container.three-item {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 480px) {
+  .grid-container.three-item{
+    grid-template-columns: auto;
+  }
 }
 
 /* Slider */

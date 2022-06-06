@@ -27,7 +27,7 @@
     </nav>
     <div class="body-container flex column">
       <div class="body-content flex row">
-        <div class="sidebar-container">
+        <div class="sidebar-container" id="sidebar-container">
           <div class="sidebar">
             <ul class="flex column">
               <li><h3>Examples</h3></li>
@@ -55,6 +55,9 @@
           <div class="example-text-body flex column gap">
             <h1>
               <span><i class="fas fa-sort-alpha-up"></i></span>Typography
+              <div class="sidebar-hamburger" id="sidebar-ham">
+                <i class="fa-solid fa-bars"></i>
+              </div>
             </h1>
             <div><p>
               Typography styles help you to use different header sizes,
@@ -157,5 +160,12 @@
         <p>Made with <span><i class="fa-solid fa-heart"></i></span> by Dhruvin Mehta</p>
       </div>
     </footer>
+    <script>
+      const hamburger = document.getElementById("sidebar-ham");
+      const sidebar = document.getElementById("sidebar-container");
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("display");
+      });
+    </script>
   </body>
 </html>

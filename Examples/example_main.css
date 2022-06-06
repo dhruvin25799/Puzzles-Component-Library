@@ -80,9 +80,19 @@ font-family: 'Josefin Sans', sans-serif;
   gap: 2rem;
 }
 
+.example-text-body h1{
+  display: flex;
+  align-items: center;
+}
+
 .example-text-body span {
   padding-right: 10px;
   color: var(--COLOR-btn-primary);
+}
+
+.sidebar-hamburger{
+  display: none;
+  margin-left: auto;
 }
 
 .example-text-body .span-code {
@@ -138,4 +148,31 @@ font-family: 'Josefin Sans', sans-serif;
 .red-box {
   color: white;
   background-color: red;
+}
+
+.list-container{
+  padding: 2rem;
+}
+
+@media (max-width: 480px) {
+  .sidebar-container{
+    display: none;
+  }
+
+  .sidebar-container.display{
+    padding: 0 2rem;
+    display: flex;
+    position: absolute;
+    left: 0;
+    background-color: var(--COLOR-secondary-bg);
+    z-index: 2;
+    width: max-content;
+  }
+  .sidebar-hamburger{
+    display: block;
+  }
+  .flex-row-avatar{
+    flex-flow: column;
+    align-items: center;
+  }
 }

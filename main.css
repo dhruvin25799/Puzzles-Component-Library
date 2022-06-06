@@ -25,6 +25,10 @@ font-family: 'Josefin Sans', sans-serif;
   background-color: var(--COLOR-secondary-bg);
 }
 
+.nav .nav-links{
+  display: flex !important;
+}
+
 *,
 body {
   margin: 0;
@@ -73,4 +77,17 @@ footer div ul{
 footer div ul li a{
   text-decoration: none;
   color: unset;
+}
+
+@media (max-width: 480px) {
+  .nav{
+    padding: 0 1rem !important;
+  }
+  footer{
+    flex-flow: column !important;
+    gap: 1rem;
+  }
+  .main-section{
+    flex-flow: column !important;
+  }
 }
