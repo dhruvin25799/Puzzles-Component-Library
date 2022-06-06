@@ -290,95 +290,60 @@
 }
 
 /* Card */
-.card {
+
+.card{
   display: flex;
   flex-flow: column;
-  border-radius: 0.5rem;
-  background-color: var(--white);
-  background-color: #f1faee;
+  gap: 1rem;
+  border-radius: 10px;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
     0 1px 3px 0 rgb(0 0 0 / 12%);
-  overflow: hidden;
+  padding: 1rem;
+  width: 300px;
 }
 
-.card.horizontal {
-  flex-flow: row wrap;
-}
-
-.card-heading.header-top {
-  order: -1;
-}
-
-.card .card-badge-container {
-  position: relative;
-}
-
-.card .card-badge-container .card-badge {
-  position: absolute;
-  background-color: var(--success);
-  padding: 0 1%;
-  top: 8px;
-  left: 8px;
-  border-radius: 10%;
-  z-index: 1;
-}
-
-.card .card-badge-container .card-badge-dismiss {
-  position: absolute;
-  color: var(--white);
-  right: 3px;
-  top: 3px;
-  z-index: 1;
-}
-
-.card .card-image {
-  position: relative;
-}
-
-.card .card-image img {
-  width: 100%;
-  height: auto;
-}
-
-.card .card-heading {
-  padding: 0 1rem;
-}
-
-.card .card-heading p {
-  color: var(--gray);
-}
-
-.card .card-body {
-  padding: 0 1rem;
-}
-
-.card .card-actions {
-  padding: 0 1rem;
-  padding-bottom: 0.5rem;
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.card .card-actions .card-action-buttons {
-  display: flex;
+.card.horizontal{
   flex-flow: row;
+  width: 100%;
+}
+
+.card .card-header{
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
+}
+
+.card .card-image{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card .card-image .bottom-left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--white);
+  padding: 7px;
+}
+.card .card-image p{
+  color: var(--white);
+}
+
+.card .card-content{
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
+}
+
+.card .card-cta{
+  display: flex;
+  flex-flow: column;
   gap: 1rem;
 }
 
-.card .card-actions .card-actions-icons {
-  margin-left: auto;
-}
-.card .card-actions .card-actions-icons i {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.card .card-image .bottom-left {
-  color: var(--white);
-  position: absolute;
-  bottom: 0.5rem;
-  left: 1rem;
-}
 
 /* Image */
 .image-container {
@@ -543,6 +508,10 @@ ul.list-stacked li {
   color: var(--COLOR-btn-primary-hover);
 }
 
+.nav-hamburger{
+  display: none;
+}
+
 /* Modal */
 
 .modal {
@@ -648,62 +617,6 @@ ul.list-stacked li {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* NavBar with submenus and hamburger */
-.navbar {
-  padding: 0 2.5rem;
-  margin: 0;
-  display: flex;
-  background-color: white;
-}
-
-.navbar a {
-  transition: all 0.2s ease;
-  font-weight: 400;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: black;
-}
-
-.navbar a:hover {
-  color: var(--COLOR-btn-primary-hover);
-}
-
-.navbar .menu {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu .navbar-brand .hamburger {
-  display: none;
-}
-
-.menu .link-dropdown {
-  position: relative;
-}
-
-.menu .link-dropdown:hover ul {
-  display: flex;
-  flex-flow: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu .link-dropdown ul {
-  width: 100%;
-  padding: 0;
-  padding-top: 10px;
-  display: none;
-  list-style: none;
-  position: absolute;
-  background-color: white;
-}
-
 /* Slider */
 
 .slider-container {
@@ -760,34 +673,30 @@ ul.list-stacked li {
 }
 
 @media (max-width: 480px) {
-  .navbar {
-    padding: 0 0.5rem;
+  .nav{
+    padding: 0;
+    margin: 0;
+    align-items: center;
   }
-  .navbar .menu {
+  .nav .nav-links{
+    display: none;
+  }
+  .nav .nav-hamburger{
+    display: flex;
+  }
+  .nav .nav-search{
+    display: none;
+  }
+  .nav.display{
     flex-flow: column;
     gap: 1rem;
   }
-  .menu li {
-    display: none;
-  }
-  .menu .navbar-brand .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-  .menu .navbar-brand {
-    width: 100%;
+  .nav.display .nav-search{
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
   }
-  .menu.display li {
-    display: block;
-  }
-  .menu.display .navbar-brand {
-    width: 100%;
+  .nav.display .nav-links{
     display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+    flex-flow: column;
   }
 }
 

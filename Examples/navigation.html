@@ -14,108 +14,173 @@
     <link rel="stylesheet" href="../components.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-brand">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-palette fa-3x"></i
-        ></a>
-        <h1>Pastel Puzzles UI</h1>
-      </div>
-      <div class="nav-links">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-home"></i>Home</a
-        >
-        <a
-          target="_blank"
-          href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
-          class="btn btn-link"
-          ><i class="fas fa-book-open"></i>Documentation</a
-        >
-        <a href="./Examples/alert.html" class="btn btn-link active"
-          ><i class="fas fa-file-code"></i>Examples</a
-        >
-      </div>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">
+        <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+        <h1>Puzzles</h1>
+      </a>
+      <menu class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a
+            href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+            target="_blank"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a href="./alert.html" class="active">Examples</a>
+        </li>
+      </menu>
     </nav>
-    <div class="body-container">
-      <div class="sidebar-container">
-        <div class="sidebar">
-          <ul>
-            <li><h3>Examples</h3></li>
-            <li><hr /></li>
-            <li><a href="./typography.html">Typography</a></li>
-            <li><a href="./alert.html">Alert</a></li>
-            <li><a href="./avatar.html">Avatar</a></li>
-            <li><a href="./badge.html">Badge</a></li>
-            <li><a href="./button.html">Button</a></li>
-            <li><a href="./card.html">Card</a></li>
-            <li><a href="./chip.html">Chip</a></li>
-            <li><a href="./image.html">Image</a></li>
-            <li><a href="./input.html">Input</a></li>
-            <li><a href="./list.html">List</a></li>
-            <li><a class="active" href="#">Navigation</a></li>
-            <li><a href="./modal.html">Modal</a></li>
-            <li><a href="./rating.html">Rating</a></li>
-            <li><a href="./snackbar.html">Snackbar</a></li>
-            <li><a href="./grid.html">Grid</a></li>
-            <li><a href="./navbar.html">NavBar</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="example-container">
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-bars"></i></span>Navigation
-          </h1>
-          <p>Navigation bar is key to a good UX of any website.</p>
-        </div>
-        <div class="example-showcase">
-          <div class="nav">
-            <a href="#"><i class="fas fa-compass fa-3x"></i></a>
-            <nav>
-              <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Product</a></li>
-              </ul>
-            </nav>
-            <a href="#">
-              <button class="btn btn-primary-outline">Login</button>
-            </a>
+    <div class="body-container flex column">
+      <div class="body-content flex row">
+        <div class="sidebar-container">
+          <div class="sidebar">
+            <ul class="flex column">
+              <li><h3>Examples</h3></li>
+              <li><hr /></li>
+              <li><a href="./alert.html">Alert</a></li>
+              <li><a href="./avatar.html">Avatar</a></li>
+              <li><a href="./badge.html">Badge</a></li>
+              <li><a href="./button.html">Button</a></li>
+              <li><a href="./card.html">Card</a></li>
+              <li><a href="./chip.html">Chip</a></li>
+              <li><a href="./grid.html">Grid</a></li>
+              <li><a href="./image.html">Image</a></li>
+              <li><a href="./input.html">Input</a></li>
+              <li><a href="./list.html">List</a></li>
+              <li><a href="./modal.html">Modal</a></li>
+              <li><a class="active" href="./navigation.html">Navigation</a></li>
+              <li><a href="./rating.html">Rating</a></li>
+              <li><a href="./slider.html">Slider</a></li>
+              <li><a href="./snackbar.html">Snackbar</a></li>
+              <li><a href="./typography.html">Typography</a></li>
+            </ul>
           </div>
         </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/MMTvuRKqZbhGqyKmgN4R"
-            style="
-              width: 680px;
-              height: 334px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-bars"></i></span>Usage
-          </h1>
-          <p>
-            Use the class <span class="span-code">nav</span> on a div to use
-            this component.
-          </p>
-          <p>
-            Use the class <span class="span-code">nav-links</span> on a ul/ol to
-            add links to the nav.
-          </p>
-          <p>
-            Note: The nav uses flexbox and uses space-between to align elements.
-          </p>
+        <div class="example-container flex column">
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-bars"></i></span>Navigation
+            </h1>
+            <div><p>Navigation bar is key to a good UX of any website.</p></div>
+          </div>
+          <div class="example-showcase">
+            <nav class="nav" id="myNav">
+              <a href="../index.html" class="nav-brand">
+                <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+                <h1>Puzzles</h1>
+              </a>
+              <div class="nav-hamburger" id="myHamburger">
+                <i class="fa-solid fa-bars fa-2x"></i>
+              </div>
+              <div class="nav-search input-control">
+                <input type="text" required />
+                <label>Search</label>
+              </div>
+              <menu class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                  <a
+                    href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+                    target="_blank"
+                    >Documentation</a
+                  >
+                </li>
+                <li>
+                  <a href="./Examples/typography.html" class="active"
+                    >Examples</a
+                  >
+                </li>
+              </menu>
+            </nav>
+          </div>
+          <div class="carbon-iframe flex centered">
+            <iframe
+              src="https://carbon.now.sh/embed/ppI00X1QgT52ls567PZL"
+              style="
+                width: 458px;
+                height: 594px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-bars"></i></span>Usage
+            </h1>
+            <p>
+              Use the class <span class="span-code">nav</span> on a nav element
+              to use this component.
+            </p>
+            <p>
+              Use the class <span class="span-code">nav-links</span> on a ul/ol
+              to add links to the nav.
+            </p>
+            <p>
+              Use the class <span class="span-code">nav-search</span> on a div
+              to add a search bar.
+            </p>
+            <p>
+              You need to use class
+              <span class="span-code">nav-hamburger</span> on the hamburger icon
+              div
+            </p>
+            <p>
+              Note: The nav uses flexbox and uses space-between to align
+              elements.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <footer class="flex row">
+      <div class="flex column gap">
+        <h3><i class="fa-solid fa-puzzle-piece"></i>Puzzles UI</h3>
+        <p>
+          Puzzles is a component library to help you solve all your UI style
+          troubles.
+        </p>
+      </div>
+      <div class="flex column gap">
+        <h3>Socials</h3>
+        <ul class="flex column gap">
+          <li>
+            <a
+              href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dhruvin-mehta-21a8a7190/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex column gap">
+        <h3>Our Team</h3>
+        <p>
+          Made with <span><i class="fa-solid fa-heart"></i></span> by Dhruvin
+          Mehta
+        </p>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("myHamburger");
+      const nav = document.getElementById("myNav");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("display");
+      });
+    </script>
   </body>
 </html>
