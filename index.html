@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugar Component Library</title>
-    <script src="https://kit.fontawesome.com/71f5b9ef6c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./components.css">
-</head>
-<body>
-    <nav>
-        <div class="nav-brand">
-        <a href="#" class="btn btn-link"><i class="fas fa-palette fa-3x"></i></a>
-        <h1>Pastel Sugar UI</h1>
-        </div>
-        <div class="nav-links">
-            <a href="#" class="btn btn-link active"><i class="fas fa-home"></i>Home</a>
-            <a target="_blank" href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme" class="btn btn-link"><i class="fas fa-book-open"></i>Documentation</a>
-            <a href="./Examples/typography.html" class="btn btn-link"><i class="fas fa-file-code"></i>Examples</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Puzzles UI</title>
+    <script
+      src="https://kit.fontawesome.com/71f5b9ef6c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./components.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#" class="nav-brand">
+        <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+        <h1>Puzzles</h1>
+      </a>
+      <menu class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li>
+          <a
+            href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+            target="_blank"
+            >Documentation</a
+          >
+        </li>
+        <li><a href="./Examples/alert.html">Examples</a></li>
+      </menu>
     </nav>
-    <section class="main-header">
-        <h1>Pastel Sugar Component Library</h1>
-        <div class="action-buttons">
-            <a href="./Examples/typography.html"><button class="btn btn-primary">Get Started</button></a>
-            <a target="_blank" href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"><button class="btn btn-primary-outline">Documentation</button></a>
+    <section class="main-section flex row centered gap">
+      <lottie-player
+        src="https://assets10.lottiefiles.com/packages/lf20_dx5nwnnb.json"
+        background="transparent"
+        speed="1"
+        style="width: 400px; height: 400px"
+        loop
+        autoplay
+      ></lottie-player>
+      <div class="main-content flex column gap text-center">
+        <div>
+          <h1 class="type1">Puzzles Component Library</h1>
+          <div>
+            <p class="type4">
+              A UI component library that let's you assemble pieces of UI
+              without worrying about styling to make the masterpiece that your
+              website is.
+            </p>
+            <p class="fw-semibold type4">Why puzzles you ask?</p>
+            <p class="text-gray fw-black type4"><em>That's the puzzle!</em></p>
+          </div>
         </div>
+
+        <div class="flex row centered gap">
+          <a href="./Examples/alert.html"
+            ><button class="btn btn-primary">Get Started</button></a
+          >
+          <a
+            target="_blank"
+            href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+            ><button class="btn btn-primary-outline">Documentation</button></a
+          >
+        </div>
+      </div>
     </section>
-</body>
+    <footer class="flex row">
+      <div class="flex column gap">
+        <h3><i class="fa-solid fa-puzzle-piece"></i>Puzzles UI</h3>
+        <p>
+          Puzzles is a component library to help you solve all your UI style
+          troubles.
+        </p>
+      </div>
+      <div class="flex column gap">
+        <h3>Socials</h3>
+        <ul class="flex column gap">
+          <li>
+            <a
+              href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dhruvin-mehta-21a8a7190/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex column gap">
+        <h3>Our Team</h3>
+        <p>
+          Made with <span><i class="fa-solid fa-heart"></i></span> by Dhruvin
+          Mehta
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

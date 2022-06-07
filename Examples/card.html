@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card | Sugar Component Library</title>
+    <link rel="icon" href="../favicon.ico" />
+    <title>Card | Puzzles Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
@@ -14,303 +15,275 @@
     <link rel="stylesheet" href="../components.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-brand">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-palette fa-3x"></i
-        ></a>
-        <h1>Pastel Sugar UI</h1>
-      </div>
-      <div class="nav-links">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-home"></i>Home</a
-        >
-        <a
-          target="_blank"
-          href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
-          class="btn btn-link"
-          ><i class="fas fa-book-open"></i>Documentation</a
-        >
-        <a href="./Examples/alert.html" class="btn btn-link active"
-          ><i class="fas fa-file-code"></i>Examples</a
-        >
-      </div>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">
+        <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+        <h1>Puzzles</h1>
+      </a>
+      <menu class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a
+            href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+            target="_blank"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a href="./alert.html" class="active">Examples</a>
+        </li>
+      </menu>
     </nav>
-    <div class="body-container">
-      <div class="sidebar-container">
-        <div class="sidebar">
-          <ul>
-            <li><h3>Examples</h3></li>
-            <li><hr /></li>
-            <li><a href="./typography.html">Typography</a></li>
-            <li><a href="./alert.html">Alert</a></li>
-            <li><a href="./avatar.html">Avatar</a></li>
-            <li><a href="./badge.html">Badge</a></li>
-            <li><a href="./button.html">Button</a></li>
-            <li><a class="active" href="#">Card</a></li>
-            <li><a href="./chip.html">Chip</a></li>
-            <li><a href="./image.html">Image</a></li>
-            <li><a href="./input.html">Input</a></li>
-            <li><a href="./list.html">List</a></li>
-            <li><a href="./navigation.html">Navigation</a></li>
-            <li><a href="./modal.html">Modal</a></li>
-            <li><a href="./rating.html">Rating</a></li>
-            <li><a href="./snackbar.html">Snackbar</a></li>
-            <li><a href="./grid.html">Grid</a></li>
-            <li><a href="./navbar.html">NavBar</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-          </ul>
+    <div class="body-container flex column">
+      <div class="body-content flex row">
+        <div class="sidebar-container" id="sidebar-container">
+          <div class="sidebar">
+            <ul class="flex column">
+              <li><h3>Examples</h3></li>
+              <li><hr /></li>
+              <li><a href="./alert.html">Alert</a></li>
+              <li><a href="./avatar.html">Avatar</a></li>
+              <li><a href="./badge.html">Badge</a></li>
+              <li><a href="./button.html">Button</a></li>
+              <li><a class="active" href="./card.html">Card</a></li>
+              <li><a href="./chip.html">Chip</a></li>
+              <li><a href="./grid.html">Grid</a></li>
+              <li><a href="./image.html">Image</a></li>
+              <li><a href="./input.html">Input</a></li>
+              <li><a href="./list.html">List</a></li>
+              <li><a href="./modal.html">Modal</a></li>
+              <li><a href="./navigation.html">Navigation</a></li>
+              <li><a href="./rating.html">Rating</a></li>
+              <li><a href="./slider.html">Slider</a></li>
+              <li><a href="./snackbar.html">Snackbar</a></li>
+              <li><a href="./typography.html">Typography</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="example-container">
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-address-card"></i></span>Card
-          </h1>
-          <p>
-            Cards are really important to show some piece of image, text and
-            call to actions together.
-          </p>
-        </div>
-        <div class="example-showcase">
-          <div class="card">
-            <div class="card-badge-container">
-              <div class="card-badge-container">
-                <div class="card-badge">New</div>
+        <div class="example-container flex column">
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-address-card"></i></span>Card
+              <div class="sidebar-hamburger" id="sidebar-ham">
+                <i class="fa-solid fa-bars"></i>
               </div>
-              <div class="card-badge-container">
-                <div class="card-badge-dismiss">
-                  <i class="fas fa-window-close"></i>
+            </h1>
+            <div>
+              <p>
+                Cards are really important to show some piece of image, text and
+                call to actions together.
+              </p>
+            </div>
+          </div>
+          <div class="example-showcase flex centered">
+            <div class="card">
+              <div class="card-header">
+                <h1>RB16B</h1>
+                <p class="fw-bold text-gray">By Red Bull</p>
+              </div>
+              <div class="card-image">
+                <img src="./res/card_image.jpg" class="image" />
+              </div>
+              <div class="card-content">
+                <p>
+                  The RB16B became the first non-Mercedes car to win any
+                  championship since 2013, Honda became the first Japanese and
+                  Asian engine supplier world champions of the turbo-hybrid era,
+                  and became one of two championship cars with the Mercedes-AMG
+                  F1 W12 (Red Bull won drivers, and Mercedes won constructors)
+                </p>
+                <p>Driver : Max Verstappen</p>
+                <p>Year : 2021</p>
+              </div>
+              <div class="card-cta">
+                <button class="btn btn-primary">Read More</button>
+                <button class="btn btn-primary-outline">Bookmark</button>
+              </div>
+            </div>
+          </div>
+          <div class="carbon-iframe flex centered">
+            <iframe
+              src="https://carbon.now.sh/embed/CVg2AihhawWfB7qyCGAD"
+              style="
+                width: 680px;
+                height: 434px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-address-card"></i></span>Card with Text
+              Overlay
+            </h1>
+          </div>
+          <div class="example-showcase flex centered">
+            <div class="card">
+              <div class="card-image">
+                <img src="./res/card_image.jpg" class="image" />
+                <div class="card-header bottom-left">
+                  <h1>RB16B</h1>
+                  <p class="fw-bold text-gray">By Red Bull</p>
                 </div>
               </div>
-            </div>
-            <div class="card-image">
-              <img src="./res/card_image.jpg" />
-            </div>
-            <div class="card-heading">
-              <h1>WB13</h1>
-              <p>By Red bull</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a,
-                iure pariatur magnam dolor consequatur inventore voluptas eum
-                placeat, sit reprehenderit odit, rerum facilis alias dolorem
-                reiciendis similique ducimus tempora.
-              </p>
-            </div>
-            <div class="card-actions">
-              <div class="card-action-buttons">
-                <button class="btn btn-primary">Read</button>
-                <button class="btn btn-primary-outline">Bookmark</button>
+              <div class="card-content">
+                <p>
+                  The RB16B became the first non-Mercedes car to win any
+                  championship since 2013, Honda became the first Japanese and
+                  Asian engine supplier world champions of the turbo-hybrid era,
+                  and became one of two championship cars with the Mercedes-AMG
+                  F1 W12 (Red Bull won drivers, and Mercedes won constructors)
+                </p>
+                <p>Driver : Max Verstappen</p>
+                <p>Year : 2021</p>
               </div>
-              <div class="card-actions-icons">
-                <button class="btn btn-icon">
-                  <i class="far fa-heart"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-share"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
+              <div class="card-cta">
+                <button class="btn btn-primary">Read More</button>
+                <button class="btn btn-primary-outline">Bookmark</button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/CVg2AihhawWfB7qyCGAD"
-            style="
-              width: 680px;
-              height: 855px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-address-card"></i></span>Card with Text
-            Overlay
-          </h1>
-        </div>
-        <div class="example-showcase">
-          <div class="card">
-            <div class="card-image">
-              <img src="./res/card_image.jpg" />
-              <div class="bottom-left">
-                <h1>WB13</h1>
-                <p>By Red bull</p>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-address-card"></i></span>Card with Text
+              Only
+            </h1>
+          </div>
+          <div class="example-showcase flex centered">
+            <div class="card">
+              <div class="card-header">
+                <h1>RB16B</h1>
+                <p class="fw-bold text-gray">By Red Bull</p>
               </div>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a,
-                iure pariatur magnam dolor consequatur inventore voluptas eum
-                placeat, sit reprehenderit odit, rerum facilis alias dolorem
-                reiciendis similique ducimus tempora.
-              </p>
-            </div>
-            <div class="card-actions">
-              <div class="card-action-buttons">
-                <button class="btn btn-primary">Read</button>
+              <div class="card-content">
+                <p>
+                  The RB16B became the first non-Mercedes car to win any
+                  championship since 2013, Honda became the first Japanese and
+                  Asian engine supplier world champions of the turbo-hybrid era,
+                  and became one of two championship cars with the Mercedes-AMG
+                  F1 W12 (Red Bull won drivers, and Mercedes won constructors)
+                </p>
+                <p>Driver : Max Verstappen</p>
+                <p>Year : 2021</p>
+              </div>
+              <div class="card-cta">
+                <button class="btn btn-primary">Read More</button>
                 <button class="btn btn-primary-outline">Bookmark</button>
-              </div>
-              <div class="card-actions-icons">
-                <button class="btn btn-icon">
-                  <i class="far fa-heart"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-share"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/0yNMlylHFHHJeN0zhIUZ"
-            style="
-              width: 680px;
-              height: 654px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-address-card"></i></span>Card with Text Only
-          </h1>
-        </div>
-        <div class="example-showcase">
-          <div class="card">
-            <div class="card-heading">
-              <h1>WB13</h1>
-              <p>By Red bull</p>
-            </div>
-            <div class="card-body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a,
-                iure pariatur magnam dolor consequatur inventore voluptas eum
-                placeat, sit reprehenderit odit, rerum facilis alias dolorem
-                reiciendis similique ducimus tempora.
-              </p>
-            </div>
-            <div class="card-actions">
-              <div class="card-action-buttons">
-                <button class="btn btn-primary">Read</button>
-                <button class="btn btn-primary-outline">Bookmark</button>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-address-card"></i></span>Horizontal Card
+            </h1>
+          </div>
+          <div class="example-showcase flex centered">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="./res/card_image.jpg" class="image" />
+                <div class="card-header bottom-left">
+                  <h1>RB16B</h1>
+                  <p class="fw-bold text-gray">By Red Bull</p>
+                </div>
               </div>
-              <div class="card-actions-icons">
-                <button class="btn btn-icon">
-                  <i class="far fa-heart"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-share"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
+              <div class="card-content">
+                <p>
+                  The RB16B became the first non-Mercedes car to win any
+                  championship since 2013, Honda became the first Japanese and
+                  Asian engine supplier world champions of the turbo-hybrid era,
+                  and became one of two championship cars with the Mercedes-AMG
+                  F1 W12 (Red Bull won drivers, and Mercedes won constructors)
+                </p>
+                <p>Driver : Max Verstappen</p>
+                <p>Year : 2021</p>
+              </div>
+              <div class="card-cta">
+                <button class="btn btn-primary">Read More</button>
+                <button class="btn btn-primary-outline">Bookmark</button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/8lZqVc5whpNQiTURCcd7"
-            style="
-              width: 680px;
-              height: 594px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-address-card"></i></span>Horizontal Card
-          </h1>
-        </div>
-        <div class="example-showcase">
-          <div class="card horizontal">
-            <div class="card-image">
-              <img src="./res/card_image.jpg" />
-            </div>
-            <div class="card-heading">
-              <h1>WB13</h1>
-              <p>By Red bull</p>
-            </div>
-            <div class="card-actions">
-              <div class="card-action-buttons">
-                <button class="btn btn-primary">Read</button>
-                <button class="btn btn-primary-outline">Bookmark</button>
-              </div>
-              <div class="card-actions-icons">
-                <button class="btn btn-icon">
-                  <i class="far fa-heart"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-share"></i>
-                </button>
-                <button class="btn btn-icon">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </div>
-            </div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-address-card"></i></span>Usage
+            </h1>
+            <p>
+              To use our cards, create a div with class
+              <span class="span-code">card</span>.
+            </p>
+            <p>
+              For a horizontal card, add the class
+              <span class="span-code">horizontal</span> on the div the with
+              <span class="span-code">card</span> class
+            </p>
+            <p>
+              Inside the div you can use classes
+              <span class="span-code">card-header</span>,
+              <span class="span-code">card-image</span>,
+              <span class="span-code">card-content</span>,
+              <span class="span-code">card-cta</span><br />
+              to add those specific components inside a div.
+            </p>
+            <p>
+              For text overlay on image, move the
+              <span class="span-code">card-header</span> class inside
+              <span class="span-code">card-image</span> class and add
+              <span class="span-code">bottom-left</span> to
+              <span class="span-code">card-header</span> div
+            </p>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/SnRkk6C4haKJ5cuXOrsg"
-            style="
-              width: 680px;
-              height: 594px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-address-card"></i></span>Usage
-          </h1>
-          <p>
-            To use our cards, create a div with class
-            <span class="span-code">class</span>.
-          </p>
-          <p>
-            Inside the div you can use classes
-            <span class="span-code">card-image</span>,
-            <span class="span-code">card-heading</span>,
-            <span class="span-code">card-actions</span> and<br /><span
-              class="span-code"
-              >card-actions-icons</span
-            >
-            to add those specific components inside a div.
-          </p>
         </div>
       </div>
     </div>
+    <footer class="flex row">
+      <div class="flex column gap">
+        <h3><i class="fa-solid fa-puzzle-piece"></i>Puzzles UI</h3>
+        <p>
+          Puzzles is a component library to help you solve all your UI style
+          troubles.
+        </p>
+      </div>
+      <div class="flex column gap">
+        <h3>Socials</h3>
+        <ul class="flex column gap">
+          <li>
+            <a
+              href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dhruvin-mehta-21a8a7190/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex column gap">
+        <h3>Our Team</h3>
+        <p>
+          Made with <span><i class="fa-solid fa-heart"></i></span> by Dhruvin
+          Mehta
+        </p>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("sidebar-ham");
+      const sidebar = document.getElementById("sidebar-container");
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("display");
+      });
+    </script>
   </body>
 </html>

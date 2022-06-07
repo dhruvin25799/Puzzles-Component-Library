@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typography | Sugar Component Library</title>
+    <link rel="icon" href="../favicon.ico" />
+    <title>Typography | Puzzles Component Library</title>
     <script
       src="https://kit.fontawesome.com/71f5b9ef6c.js"
       crossorigin="anonymous"
@@ -14,120 +15,176 @@
     <link rel="stylesheet" href="../components.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-brand">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-palette fa-3x"></i
-        ></a>
-        <h1>Pastel Sugar UI</h1>
-      </div>
-      <div class="nav-links">
-        <a href="../index.html" class="btn btn-link"
-          ><i class="fas fa-home"></i>Home</a
-        >
-        <a target="_blank" href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme" class="btn btn-link"><i class="fas fa-book-open"></i>Documentation</a>
-        <a href="./Examples/alert.html" class="btn btn-link active"
-          ><i class="fas fa-file-code"></i>Examples</a
-        >
-      </div>
+    <nav class="nav">
+      <a href="../index.html" class="nav-brand">
+        <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+        <h1>Puzzles</h1>
+      </a>
+      <menu class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a
+            href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev#readme"
+            target="_blank"
+            >Documentation</a
+          >
+        </li>
+        <li><a href="./alert.html" class="active">Examples</a></li>
+      </menu>
     </nav>
-    <div class="body-container">
-      <div class="sidebar-container">
-        <div class="sidebar">
-          <ul>
-            <li><h3>Examples</h3></li>
-            <li><hr /></li>
-            <li><a class="active" href="#">Typography</a></li>
-            <li><a href="./alert.html">Alert</a></li>
-            <li><a href="./avatar.html">Avatar</a></li>
-            <li><a href="./badge.html">Badge</a></li>
-            <li><a href="./button.html">Button</a></li>
-            <li><a href="./card.html">Card</a></li>
-            <li><a href="./chip.html">Chip</a></li>
-            <li><a href="./image.html">Image</a></li>
-            <li><a href="./input.html">Input</a></li>
-            <li><a href="./list.html">List</a></li>
-            <li><a href="./navigation.html">Navigation</a></li>
-            <li><a href="./modal.html">Modal</a></li>
-            <li><a href="./rating.html">Rating</a></li>
-            <li><a href="./snackbar.html">Snackbar</a></li>
-            <li><a href="./grid.html">Grid</a></li>
-            <li><a href="./navbar.html">NavBar</a></li>
-            <li><a href="./slider.html">Slider</a></li>
-          </ul>
+    <div class="body-container flex column">
+      <div class="body-content flex row">
+        <div class="sidebar-container" id="sidebar-container">
+          <div class="sidebar">
+            <ul class="flex column">
+              <li><h3>Examples</h3></li>
+              <li><hr /></li>
+              <li><a href="./alert.html">Alert</a></li>
+              <li><a href="./avatar.html">Avatar</a></li>
+              <li><a href="./badge.html">Badge</a></li>
+              <li><a href="./button.html">Button</a></li>
+              <li><a href="./card.html">Card</a></li>
+              <li><a href="./chip.html">Chip</a></li>
+              <li><a href="./grid.html">Grid</a></li>
+              <li><a href="./image.html">Image</a></li>
+              <li><a href="./input.html">Input</a></li>
+              <li><a href="./list.html">List</a></li>
+              <li><a href="./modal.html">Modal</a></li>
+              <li><a href="./navigation.html">Navigation</a></li>
+              <li><a href="./rating.html">Rating</a></li>
+              <li><a href="./slider.html">Slider</a></li>
+              <li><a href="./snackbar.html">Snackbar</a></li>
+              <li><a class="active" href="./typography.html">Typography</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="example-container">
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-sort-alpha-up"></i></span>Typography
-          </h1>
-          <p>
-            Typography styles help you to use different header sizes,
-            line-heights wihtout tweaking the css much.
-          </p>
-          <p>
-            We provide 5 different headers, 5 different font-weights and 5
-            different line-heights.
-          </p>
-        </div>
-        <div class="example-showcase">
-          <div class="container">
-            <h1 class="type1">This is an h1</h1>
-            <h2 class="type2">This is an h2</h2>
-            <h3 class="type3">This is an h3</h3>
-            <p class="type1">This is a p tag with type1</p>
-            <p class="type2">This is a p tag with type2</p>
-            <p class="type3">This is a p tag with type3</p>
-            <p class="fw-light">This is a p tag with font-weight: light</p>
-            <p class="fw-regular">This is a p tag with font-weight: regular</p>
-            <p class="fw-semibold">
-              This is a p tag with font-weight: semibold
-            </p>
-            <p class="fw-bold">This is a p tag with font-weight: bold</p>
-            <p class="fw-black">This is a p tag with font-weight: black</p>
-            <div class="container text-center">
-              <p class="text-gray fw-black">
-                Text in this div is centered and gray
+        <div class="example-container flex column">
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-sort-alpha-up"></i></span>Typography
+              <div class="sidebar-hamburger" id="sidebar-ham">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </h1>
+            <div>
+              <p>
+                Typography styles help you to use different header sizes,
+                line-heights wihtout tweaking the css much.
+              </p>
+              <p>
+                We provide 5 different headers, 5 different font-weights and 5
+                different line-heights.
               </p>
             </div>
           </div>
-        </div>
-        <div class="carbon-iframe">
-          <iframe
-            src="https://carbon.now.sh/embed/JTcbsx8NMCBzXS67yXtj"
-            style="
-              width: 680px;
-              height: 214px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </div>
-        <hr class="section-divider" />
-        <div class="example-text-body">
-          <h1>
-            <span><i class="fas fa-sort-alpha-up"></i></i></span>Usage
-          </h1>
-          <p>
-            Use the class <span class="span-code">type1</span> on a h1 tag or p tag to use
-            these components.
-          </p>
-          <p>
-            Additionally use can use our extra classes
-            <span class="span-code">fw-light</span>
-            <span class="span-code">fw-regular</span>
-            <span class="span-code">fw-semibold</span>
-            <span class="span-code">fw-bold</span><br>
-            <span class="span-code">fw-black</span> to get font-weights
-          </p>
-          <p>Also you can use class <span class="span-code">text-center</span> to center the text.</p>
-          <p>You can also use class <span class="span-code">text-gray</span> for gray text.</p>
+          <div class="example-showcase">
+            <div class="container">
+              <h1 class="type1">This is an h1</h1>
+              <h2 class="type2">This is an h2</h2>
+              <h3 class="type3">This is an h3</h3>
+              <p class="type1">This is a p tag with type1</p>
+              <p class="type2">This is a p tag with type2</p>
+              <p class="type3">This is a p tag with type3</p>
+              <p class="fw-light">This is a p tag with font-weight: light</p>
+              <p class="fw-regular">
+                This is a p tag with font-weight: regular
+              </p>
+              <p class="fw-semibold">
+                This is a p tag with font-weight: semibold
+              </p>
+              <p class="fw-bold">This is a p tag with font-weight: bold</p>
+              <p class="fw-black">This is a p tag with font-weight: black</p>
+              <div class="container text-center">
+                <p class="text-gray fw-black">
+                  Text in this div is centered and gray
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carbon-iframe flex centered">
+            <iframe
+              src="https://carbon.now.sh/embed/JTcbsx8NMCBzXS67yXtj"
+              style="
+                width: 680px;
+                height: 214px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <hr class="section-divider" />
+          <div class="example-text-body flex column gap">
+            <h1>
+              <span><i class="fas fa-sort-alpha-up"></i></span>Usage
+            </h1>
+            <p>
+              Use the class <span class="span-code">type1</span> on a h1 tag or
+              p tag to use these components.
+            </p>
+            <p>
+              Additionally use can use our extra classes
+              <span class="span-code">fw-light</span>
+              <span class="span-code">fw-regular</span>
+              <span class="span-code">fw-semibold</span>
+              <span class="span-code">fw-bold</span><br />
+              <span class="span-code">fw-black</span> to get font-weights
+            </p>
+            <p>
+              Also you can use class
+              <span class="span-code">text-center</span> to center the text.
+            </p>
+            <p>
+              You can also use class
+              <span class="span-code">text-gray</span> for gray text.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <footer class="flex row">
+      <div class="flex column gap">
+        <h3><i class="fa-solid fa-puzzle-piece"></i>Puzzles UI</h3>
+        <p>
+          Puzzles is a component library to help you solve all your UI style
+          troubles.
+        </p>
+      </div>
+      <div class="flex column gap">
+        <h3>Socials</h3>
+        <ul class="flex column gap">
+          <li>
+            <a
+              href="https://github.com/dhruvin25799/PS-Component-Library/tree/dev"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dhruvin-mehta-21a8a7190/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex column gap">
+        <h3>Our Team</h3>
+        <p>
+          Made with <span><i class="fa-solid fa-heart"></i></span> by Dhruvin
+          Mehta
+        </p>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("sidebar-ham");
+      const sidebar = document.getElementById("sidebar-container");
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("display");
+      });
+    </script>
   </body>
 </html>
