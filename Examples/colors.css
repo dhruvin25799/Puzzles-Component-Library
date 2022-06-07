@@ -1,0 +1,31 @@
+:root {
+  --error: #dc3545;
+  --success: #28a745;
+  --warning: #fde68a;
+  --info: #17a2b8;
+  --white: white;
+  --black: black;
+  --gray: gray;
+  --red: red;
+  --btn-primary-red: #dc0000;
+  --btn-primary-red-hover: #ed2641;
+  --COLOR-bg: #fafafa;
+  --COLOR-secondary-bg: white;
+  --COLOR-text: black;
+  --COLOR-border: rgba(128, 128, 128, 0.3);
+  --COLOR-btn-primary: #028aff;
+  --COLOR-btn-primary-hover: #ff7702;
+  --COLOR-backdrop-bg: rgba(0, 0, 0, 0.85);
+  --COLOR-modal-bg: white;
+  --COLOR-blue: #028aff;
+}
+
+[data-theme="dark"] {
+  --COLOR-bg: #121212;
+  --COLOR-secondary-bg: black;
+  --COLOR-text: white;
+  --COLOR-border: rgba(128, 128, 128, 0.7);
+  --COLOR-btn-primary: #d300c5;
+  --COLOR-btn-primary-hover: #ff7702;
+  --COLOR-modal-bg: #262626;
+}

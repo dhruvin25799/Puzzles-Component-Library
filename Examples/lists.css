@@ -1,0 +1,21 @@
+/* Lists */
+ul.list-spaced {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+ul.no-style li {
+  list-style: none;
+}
+
+ul.list-stacked {
+  display: flex;
+  flex-flow: column;
+  gap: 0;
+}
+
+ul.list-stacked li {
+  padding: 1% 0;
+  border-bottom: 1px solid var(--black);
+}

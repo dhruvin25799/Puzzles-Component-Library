@@ -1,0 +1,14 @@
+/* Avatar */
+.avatar {
+  border-radius: 50%;
+  width: 3rem;
+}
+.avatar.medium {
+  width: 4rem;
+}
+.avatar.large {
+  width: 6rem;
+}
+.avatar.xlarge {
+  width: 8rem;
+}

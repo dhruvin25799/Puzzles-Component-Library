@@ -1,0 +1,13 @@
+/* Image */
+.image-container {
+  width: 20rem;
+}
+
+.image-container .image {
+  width: 100%;
+  height: auto;
+}
+
+.image-container .image.round {
+  border-radius: 50%;
+}

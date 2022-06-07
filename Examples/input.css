@@ -1,0 +1,49 @@
+/* Input */
+.input-control {
+  position: relative;
+}
+
+.input-control input {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-control label {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  bottom: 1px;
+  left: 0.5rem;
+  z-index: 1;
+  height: 1rem;
+  font-size: 13px;
+  line-height: 3.5em;
+  color: #999;
+  white-space: nowrap;
+  cursor: text;
+  transition: all 0.1s ease;
+}
+
+.input-control input:focus ~ label,
+input:valid ~ label {
+  font-size: 0.5625rem;
+  font-weight: bold;
+  left: 5px;
+  top: -5px;
+}
+.input-control input:valid ~ label {
+  color: var(--success);
+}
+.input-control input:focus:invalid ~ label {
+  color: var(--error);
+}
+
+.input-control input:required ~ label::before {
+  content: "*";
+  color: var(--error);
+}
+
+.input-control input:required:valid ~ label::before {
+  color: var(--success);
+}

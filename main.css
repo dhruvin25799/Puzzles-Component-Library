@@ -79,6 +79,29 @@ footer div ul li a{
   color: unset;
 }
 
+/* Display classes */
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-flow: row;
+}
+
+.flex.column {
+  flex-flow: column;
+}
+
+.flex.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex.gap{
+  gap: 1rem;
+}
+
 @media (max-width: 480px) {
   .nav{
     padding: 0 1rem !important;

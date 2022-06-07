@@ -1,0 +1,33 @@
+/* Rating */
+.rating-control {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.rating-control a {
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.5s ease 0s;
+}
+
+.rating-control a:hover {
+  color: var(--COLOR-btn-primary);
+}
+
+.s1:hover ~ a {
+  color: var(--COLOR-btn-primary);
+}
+.s2:hover ~ a {
+  color: var(--COLOR-btn-primary);
+}
+.s3:hover ~ a {
+  color: var(--COLOR-btn-primary);
+}
+.s4:hover ~ a {
+  color: var(--COLOR-btn-primary);
+}
+.s5:hover ~ a {
+  color: var(--COLOR-btn-primary);
+}

@@ -1,0 +1,53 @@
+/* Typography */
+.type1 {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.type2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.type3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.type4 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.type5 {
+  font-size: 8px;
+  line-height: 16px;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-center {
+  text-align: center;
+}
